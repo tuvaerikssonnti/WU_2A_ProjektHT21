@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID.LAYOUT</title>
+    
+    <link rel="stylesheet" href="GRIP.LAYOUT/css/style.css">
+
+</head>
+<body>
+    
+<div class="gridWrapper">
+
+    <header class="header"><h5>header</h5></header>
+    <nav class="nav"><h5>nav</h5></nav>
+    <article class="article1"><h5>article</h5></article>
+    <article class="article2"><h5>article</h5></article>
+    <article class="article3"><h5>article</h5></article>
+    <article class="article4"><h5>article</h5></article>
+    <article class="article5"><h5>article</h5></article>
+    <article class="article6"><h5>article</h5></article>
+    <article class="article7"><h5>article</h5></article>
+    <article class="article8"><h5>article</h5></article>
+    <section class="innerGridWrapper">
+    <div class="innerdiv"><h5>div</h5></div>
+    <div class="innerdiv"><h5>div</h5></div>
+    <div class="innerdiv"><h5>div</h5></div>
+    <div class="innerdiv"><h5>div</h5></div>
+    </section>
+    <footer class="footer"><h5>footer</h5></footer>
+    <aside class="aside"><h5>aside</h5></aside>
+
+
+</div>
+
+</body>
+</html>
+* {
+    margin:0;
+}
+
+.gridWrapper {
+display: grid;
+width: 100vw;
+height: 100vh;
+
+grid-template-areas: 
+
+"he he he he he"
+"na na na na as"
+"a1 a1 a1 a1 as"
+"a2 a2 a3 a3 as"
+"a4 a5 se a6 as"
+"a7 a7 a7 a7 as"
+"a8 a8 a8 a8 a8"
+"fo fo fo fo fo";
+
+;
+   
+
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(8, 1fr);
+grid-gap: 2px;
+}
+
+.header {
+
+grid-area: he;
+background: lightseagreen;
+
+}
+
+.nav {
+grid-area: na;
+background: salmon;
+
+}
+
+.article1 {
+    grid-area: a1;
+    background: lightskyblue;
+}
+
+.article2 {
+    grid-area: a2;
+    background: lightyellow;
+}
+.article3 {
+    grid-area: a3;
+    background: rgb(62, 20, 78);
+}
+
+.article4 {
+    grid-area: a4;
+    background: lightpink;
+}
+.article5 {
+    grid-area: a5;
+    background: rgb(115, 129, 175);
+}
+.article6 {
+    grid-area: a6;
+    background: rgb(0, 13, 128);
+}
+.article7 {
+    grid-area: a7;
+    background: rgb(207, 84, 145);
+}
+.article8 {
+    grid-area: a8;
+    background: lightgreen;
+}
+
+.innerGridWrapper {
+grid-area: se;
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr ;
+grid-gap: 2px;
+}
+
+.aside {
+
+    grid-area: as;
+    background: violet;
+}
+
+.footer {
+    grid-area: fo;
+    background: purple;
+}
+
+h5 {
+    font-family: serif;
+}
+.innerdiv {
+    background: red;
+}

@@ -1,9 +1,12 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
-#food_img {
-    width: 100px;;
-    height: auto;
-
+header{
+    height: 100px;
+    background-image: url(../img/img.food.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }

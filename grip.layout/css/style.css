@@ -1,0 +1,99 @@
+* {
+    margin:0;
+}
+
+.gridWrapper {
+display: grid;
+width: 100vw;
+height: 100vh;
+background-color: brown;
+grid-template-areas: 
+
+"he he he he he"
+"he he he he he"
+"a1 a1 a1 a1 as"
+"a2 a2 a3 a3 as"
+"a4 a5 se a6 as"
+"a7 a7 a7 a7 as"
+"a8 a8 a8 a8 a8"
+"fo fo fo fo fo";
+
+;
+   
+
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(8, 200px);
+grid-gap: 2px;
+}
+
+.header {
+
+grid-area: he;
+background: lightpink;
+
+}
+
+.nav {
+grid-area: na;
+background: salmon;
+
+}
+
+.article1 {
+    grid-area: a1;
+    background: green;
+}
+
+.article2 {
+    grid-area: a2;
+    background: rgb(7, 13, 99);
+}
+.article3 {
+    grid-area: a3;
+    background: rgb(62, 20, 78);
+}
+
+.article4 {
+    grid-area: a4;
+    background: rgb(138, 76, 107);
+}
+.article5 {
+    grid-area: a5;
+    background: rgb(115, 129, 175);
+}
+.article6 {
+    grid-area: a6;
+    background: rgb(0, 13, 128);
+}
+.article7 {
+    grid-area: a7;
+    background: rgb(207, 84, 145);
+}
+.article8 {
+    grid-area: a8;
+    background: rgb(156, 216, 15);
+}
+
+.innerGridWrapper {
+grid-area: se;
+
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr ;
+grid-gap: 10px;
+}
+
+.aside {
+
+    grid-area: as;
+    background: violet;
+}
+
+.footer {
+    grid-area: fo;
+    background: purple;
+}
+
+h5 {
+    font-family: sans-serif;
+}
