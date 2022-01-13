@@ -7,10 +7,8 @@ header{
     background-color: brown;
     height: 100px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
+
+
     
 }
 
@@ -27,15 +25,14 @@ header{
 
 
 }
+img{
+align-items: center;
+justify-content: center
 
-#logga_footer {
-    height: 35vh;
 }
 ul {
-    color: white;
+        color: white;
 }
-
-
 
 footer{
     height: 200px;
@@ -48,6 +45,9 @@ footer{
     background-size: 30px;
 }
 
+#logga_footer {
+    height: 35vh;
+}
 
 #link_list {
     list-style: element();
@@ -64,7 +64,7 @@ footer{
     text-decoration: none;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 20px; 
     cursor: pointer;
 }
 .meny_link:hover {

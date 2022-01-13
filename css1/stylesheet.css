@@ -4,28 +4,44 @@
 }
 
 header{
-    background-color: brown;
+
+  background-color: brown;
     height: 100px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ 
+
  
     
+    
 }
+
+a{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+strong {
+    width: 40vw;
+} 
 
 #homepage{
 
 
-    background-image: url(../img/img.food.jpg);
+    background-image: url(../img/om\ oss\ bild.jpg);
   
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 700px;
+    height: 400px;
     width: 100%;
 
-
+}
+#homepage p{
+    width: 40vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    
 }
 
 #logga_footer {
@@ -34,7 +50,6 @@ header{
 ul {
     color: white;
 }
-
 
 
 footer{
